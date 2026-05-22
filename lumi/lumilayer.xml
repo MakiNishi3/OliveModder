@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<effect id="LumiLayer" name="Lumi Layer" category="Lumi AE">
+    <vertex_shader url="common.vert"/>
+    <fragment_shader url="lumilayer.frag"/>
+    <parameters>
+        <parameter id="preserve_hue" name="Preserve Hue Shift" type="bool" default="false"/>
+        <parameter id="rotation" name="Rotation" type="float" default="0.0" min="-360.0" max="360.0"/>
+        <parameter id="position" name="Position" type="vec2" default="0.0, 0.0" min="-1.0, -1.0" max="1.0, 1.0"/>
+        <parameter id="scale" name="Scale" type="vec2" default="1.0, 1.0" min="0.0, 0.0" max="10.0, 10.0"/>
+        <parameter id="pre_brightness" name="Pre Brightness" type="float" default="1.0" min="0.0" max="5.0"/>
+        <parameter id="new_opacity" name="New Opacity" type="float" default="1.0" min="0.0" max="1.0"/>
+    </parameters>
+</effect>
