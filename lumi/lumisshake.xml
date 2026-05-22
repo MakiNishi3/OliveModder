@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect id="lumi.shake" name="Lumi S_Shake" category="Lumi Distort">
+    <vertex_shader src="common.vert" />
+    <fragment_shader src="lumisshake.frag" />
+    <parameter id="u_Amount" name="Amount" type="float" default="0.1" min="0.0" max="1.0" />
+    <parameter id="u_Speed" name="Speed" type="float" default="5.0" min="0.0" max="20.0" />
+    <parameter id="u_Time" name="Time" type="float" default="0.0" min="0.0" max="10000.0" automatic="time" />
+    <parameter id="u_Seed" name="Seed" type="float" default="1.0" min="0.0" max="100.0" />
+</effect>
