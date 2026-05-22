@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect>
+    <name>Lumi 3D Shape</name>
+    <category>Lumi Distort</category>
+    <author>Olive Video Editor</author>
+    <description>Renders a 3D shape with lighting and distortion effects.</description>
+    <pass>
+        <vertex>common.vert</vertex>
+        <fragment>lumi3dshape.frag</fragment>
+    </pass>
+    <param>
+        <id>shape_type</id>
+        <name>Shape Type</name>
+        <type>choice</type>
+        <default>0</default>
+        <item>Sphere</item>
+        <item>Torus</item>
+        <item>Cube</item>
+    </param>
+    <param>
+        <id>scale</id>
+        <name>Scale</name>
+        <type>float</type>
+        <minimum>0.1</minimum>
+        <maximum>5.0</maximum>
+        <default>1.0</default>
+    </param>
+    <param>
+        <id>distortion</id>
+        <name>Distortion</name>
+        <type>float</type>
+        <minimum>0.0</minimum>
+        <maximum>10.0</maximum>
+        <default>0.0</default>
+    </param>
+    <param>
+        <id>light_pos_x</id>
+        <name>Light X</name>
+        <type>float</type>
+        <minimum>-10.0</minimum>
+        <maximum>10.0</maximum>
+        <default>5.0</default>
+    </param>
+    <param>
+        <id>light_pos_y</id>
+        <name>Light Y</name>
+        <type>float</type>
+        <minimum>-10.0</minimum>
+        <maximum>10.0</maximum>
+        <default>5.0</default>
+    </param>
+</effect>
