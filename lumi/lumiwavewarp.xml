@@ -1,0 +1,13 @@
+<!-- lumiwavewarp.xml -->
+<effect>
+    <name>Lumi Warp Waves</name>
+    <category>Lumi Distort</category>
+    <vertex_shader>common.vert</vertex_shader>
+    <fragment_shader>lumiwavewarp.frag</fragment_shader>
+    <parameter type="float" name="frequency_x" default="10.0" min="0.0" max="100.0"/>
+    <parameter type="float" name="frequency_y" default="10.0" min="0.0" max="100.0"/>
+    <parameter type="float" name="amplitude_x" default="0.05" min="0.0" max="0.5"/>
+    <parameter type="float" name="amplitude_y" default="0.05" min="0.0" max="0.5"/>
+    <parameter type="float" name="speed" default="1.0" min="0.0" max="10.0"/>
+    <parameter type="float" name="luminance_influence" default="0.5" min="0.0" max="1.0"/>
+</effect>
